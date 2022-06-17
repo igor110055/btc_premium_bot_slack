@@ -103,7 +103,7 @@ def slack_bot():
 
 #실행 주기 설정
 slack_bot()
-schedule.every(12).hour.do(slack_bot)
+schedule.every(12).hours.do(slack_bot)
 
 #스케줄 시작
 while True:
