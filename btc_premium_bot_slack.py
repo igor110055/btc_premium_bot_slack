@@ -12,11 +12,12 @@ import time
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
-
+input1=input("slack_token: ")
+input2=input("channel_id: ")
 #slack_bot
 def slack_bot():
-    slack_token=input("slack_token: ")
-    channel_id=input("channel_id: ")
+    slack_token=input1
+    channel_id=input2
     client_slack=WebClient(token=slack_token)
 
 
