@@ -102,7 +102,8 @@ def slack_bot():
         assert e.response["error"]
 
 #실행 주기 설정
-schedule.every().day.at("06:00").do(slack_bot)
+do(slack_bot)
+schedule.every(12).hour.do(slack_bot)
 
 #스케줄 시작
 while True:
