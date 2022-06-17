@@ -102,7 +102,7 @@ def slack_bot():
         assert e.response["error"]
 
 #실행 주기 설정
-do(slack_bot)
+slack_bot()
 schedule.every(12).hour.do(slack_bot)
 
 #스케줄 시작
